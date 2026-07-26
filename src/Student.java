@@ -57,7 +57,7 @@ public class Student {
     }
 
     public int[] getGrades() {
-        return grades; // currently the grades array may be accessed by means other than setGrades further research needed
+        return grades;
     }
 
     public void setGrades(int[] grades) {
