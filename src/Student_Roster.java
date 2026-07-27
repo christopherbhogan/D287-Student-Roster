@@ -13,19 +13,21 @@ public class Student_Roster {
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getStudentID().equals(studentID)) {
                 students.remove(i);
+                System.out.println("Student with ID " + studentID + " has been removed");
                 return;
             }
         }
-        System.out.println("Student with ID " + studentID + " not found");
+        System.out.println("Error: Student with ID " + studentID + " not found");
     }
 
     public void print_all() {
             for (Student student : students) {
                 student.print();
             }
+            System.out.println();
     }
 
-    public void print_average_grade (String studentID) {
+    public void print_average_grade(String studentID) {
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getStudentID().equals(studentID)) {
                 double sum = 0;
@@ -48,7 +50,7 @@ public class Student_Roster {
                 System.out.println("Invalid email address: " + emailCheck);
             }
         }
+        System.out.println();
     }
-
 
 }
