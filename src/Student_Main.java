@@ -6,6 +6,5 @@ public class Student_Main {
         "4,Erin,Black,Erin.black@comcast.net,22,91,98,82",
         "5,firstName,lastName,myemail@email.com,34,85,89,93"}; // replace with personal details
     }
-
-    //step 3B completed
+    //completed step 3E
 }

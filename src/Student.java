@@ -1,4 +1,4 @@
-import java.util.Arrays; // to convert array of grades to readable text
+import java.util.Arrays; // to print array of grades
 
 public class Student {
     private String studentID;
@@ -44,6 +44,7 @@ public class Student {
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
@@ -56,21 +57,17 @@ public class Student {
         this.age = age;
     }
 
-    public int[] getGrades() {
-        return grades;
-    }
+    public int[] getGrades() {return grades; }
 
     public void setGrades(int[] grades) {
         this.grades = grades;
     }
 
     public void print() {
-        System.out.println("Student ID: " + getStudentID());
-        System.out.println("First Name: " + getFirstName());
-        System.out.println("Last Name: " + getLastName());
-        System.out.println("E-mail: " + getEmail());
-        System.out.println("Age: " + getAge());
-        System.out.println("Grades: " + Arrays.toString(getGrades()));
+        System.out.println(getStudentID() + "\tFirst Name: " + getFirstName() + "\tLast Name: " +
+                            getLastName() + "\tAge: " + getAge() + "\tEmail: " + getEmail() + "\tGrades: " +
+                            Arrays.toString(getGrades()).replace("[", "{").replace("]", "}"));
+
     }
 
 }
